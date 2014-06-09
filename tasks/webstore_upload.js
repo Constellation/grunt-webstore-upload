@@ -99,7 +99,7 @@ module.exports = function (grunt) {
             });
 
             function requestToken( code ){
-                console.log('code', code);
+                // console.log('code', code);
                 var post_data = util.format('client_id=%s&client_secret=%s&code=%s&grant_type=authorization_code&redirect_uri=%s', options.client_id, options.client_secret, code, callbackURL),
                     req = https.request({
                         host: 'accounts.google.com',
